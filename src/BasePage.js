@@ -1,7 +1,8 @@
 import React from "react";
-import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import {BrowserRouter , Switch, Route, Link} from "react-router-dom";
 import {Main} from "./pages/Main";
-import Header from "./layout/Header";
+// import Header from "./layout/Header";
+// import Footer from "./layout/Footer";
 import Intro from "./pages/Intro";
 
 export default function BasePage() {
@@ -9,11 +10,10 @@ export default function BasePage() {
         <BrowserRouter>
             <Switch>
                 {
-                    <Redirect exact from="/" to="/intro"/>
+                    <Route exact from="/" to="/intro"/>
                 }
                 <Route path="/intro" component={Intro}/>
                 <>
-                    <Header/>
                     <Route path="/main" component={Main}/>
                 </>
             </Switch>
