@@ -1,7 +1,24 @@
-.Footer {
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+.logo {
+    width: 120px;
+    height: 60px;
 }
-.footerBar {
+.logo-wrapper{
+
+}
+
+.logo-container{
+
+}
+
+.login-label{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', cursive;
+    color: black;
+}
+
+.navbar{
     padding: 0;
     -webkit-box-sizig: border-box;
     -moz-box-sizing: border-box;
@@ -10,8 +27,7 @@
     background-color: white;
     display: block;
 }
-
-.footerBar-container {
+.navbar-container{
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -20,8 +36,4 @@
     max-width: 1024px;
     padding: 0 20px;
     margin: 0 auto;
-}
-
-.info{
-    font-family: 'Noto Sans KR', cursive;
 }
